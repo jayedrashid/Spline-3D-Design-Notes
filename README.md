@@ -1,12 +1,3 @@
----
-title: Spline - Design Tool for 3D Web Tutorial
-tags: visual
-expertise: intermediate
-cover: https://images.ctfassets.net/ooa29xqb8tix/3o9JjDLNNqNyctDjtHUg2T/50b3c6a6abb2c3a1a1969803d87349ed/Create_3D_site_with_Spline_and_React_image_1.jpg
-firstSeen: 2020-01-01
-lastUpdated: 2022-08-29
----
-
 
 # `Spline 3d`
 
