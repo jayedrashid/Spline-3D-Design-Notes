@@ -4,7 +4,7 @@
 `Spline - 3D Design Tutorial`
 
 <p align="center">
- <img width="400px" src="https://images.ctfassets.net/ooa29xqb8tix/3o9JjDLNNqNyctDjtHUg2T/50b3c6a6abb2c3a1a1969803d87349ed/Create_3D_site_with_Spline_and_React_image_1.jpg" align="center" alt="GitHub Readme Stats" />
+ <img width="550px" src="https://images.ctfassets.net/ooa29xqb8tix/3o9JjDLNNqNyctDjtHUg2T/50b3c6a6abb2c3a1a1969803d87349ed/Create_3D_site_with_Spline_and_React_image_1.jpg" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">Spline 3d Design For Web</h2>
 </p>
 
