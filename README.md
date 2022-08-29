@@ -1,4 +1,14 @@
 
+---
+title: Spline - Design Tool for 3D Web Tutorial
+tags: visual
+expertise: intermediate
+cover: https://images.ctfassets.net/ooa29xqb8tix/3o9JjDLNNqNyctDjtHUg2T/50b3c6a6abb2c3a1a1969803d87349ed/Create_3D_site_with_Spline_and_React_image_1.jpg
+firstSeen: 2020-01-01
+lastUpdated: 2022-08-29
+---
+
+
 # `Spline 3d`
 
 `Spline - 3D Design Tutorial`
@@ -36,7 +46,7 @@ Designing in 3D has never been easier. Create 3D scenes, edit materials, and mod
 There are few keyboard shortcuts of Spline. They are:
 
 
-| Command            | Keybinding                            |   |  |
+| Command            | Keys                                  |   |  |
 |:-------------------|:--------------------------------------|---|--|
 | Orbit              | `Option` + `Mouse Click`              |   |  |
 | Sizing             | `Shift` + `Drag`                      |   |  |
@@ -46,8 +56,10 @@ There are few keyboard shortcuts of Spline. They are:
 | Zoom +/-           | `Cmd` + `+/-`                         |   |  |
 | Copy               | `Cmd` + `D`                           |   |  |
 | Select Multiple    | `Shift` + `Mouse Click`               | * |  |
-| Create Rectangle   | `R`                                   | * |  |
-| Create Sphere      | `S`                                   | * |  |
+| Rectangle          | `R`                                   | * |  |
+| Ellipse            | `O`                                   | * |  |
+| Triangle           | `K`                                   | * |  |
+| Pentagon           | `J`                                   | * |  |
 | Reset Camera       | `Mouse Right Click` > `View`          | * |  |
 | Copy Material      | `Mouse Right Click` > `Copy Material` | * |  |
 
@@ -61,56 +73,66 @@ Here are few object parameters to speed up the Spline workforce.
 `Rectangle` Parameters
 
 ```
-Rectangle
+Rectangle (Frontend UI)
 ├── Shape
 |   └── Size: 1280 * 844
 └── Material
-    ├── Image
+    ├── Image: Upload Image
     └── Glass
         └── Blur: 25
+```
+
+`Pentagon` Parameters
+
+```
+Pentagon (Avatar)
+├── Shape
+|   ├── Side:       6
+|   ├── Corner:     10
+|   └── Extrusion:  10
+├── Material
+|    ├── Image: Upload Image
+|    └── 
+└── Material (2nd)
+    └── Depth
+        ├── Ramp(range):   Opacity: 0
+        ├── Color:  Dark
+        ├── Type:   Linear
+        ├── Direction:   Z 1
+        ├── Near:   9.9
+        └── Far:    10
 ```
 
 `Rectangle` Parameters
 
 ```
-Rectangle
-├── Shape
+Rectangle (Banner)
+├── Shape (Not Copied, Put Manually)
 |   ├── Size:       667 * 180
-|   ├── Z-index:    10
+|   ├── Position:   Z 10
 |   ├── Corner:     20
 |   └── Extrusion:  10
-```
-
-`Polygon` Parameters
-
-```
-Rectangle
-├── Shape
-|   ├── Side:       6
-|   ├── Corner:     10
-|   └── Extrusion:  10
-└── Material
-    └── Depth
-        ├── Ramp:   Opacity: 50
-        ├── Color:  Dark
-        ├── Type:   Linear
-        ├── Near:   9.9
-        └── Far:    10
+└── Material (Copied)
 ```
 
 `Sphere` Parameters
 
 ```
-Rectangle
+Sphere (Blob)
 ├── Shape
 |   └── Size: 1000 * 1000 * 1000
-├── Material
-|   └── Displace  295    690
-|       ├── Simplex: 1.7  1
-|       └── Simplex: 1.32  10
 ├── Smooth
 |   └── Level 4
-
+├── Material
+|   └── Displace  295    690
+|       └── Simplex: 1.7  1
+└── Material (2nd)
+    ├── Lighting: None
+    └── Depth
+         ├── Ramp(range):
+         ├── Color:  Bluish
+         ├── Near:   360
+         └── Far:    650
 ```
 
 
@@ -186,4 +208,6 @@ State
 Feel free to Contact me on [Twitter](https://mobile.twitter.com/jayedrashid), send an email to jayed@jayedrashid.com
 
 <img height="20" src="https://www.bollywoodmdb.com/images/uparrow.gif"> [back to top](#quick-links)<br>
+
+
 
