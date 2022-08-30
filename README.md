@@ -1,10 +1,11 @@
 
+
 # `Spline 3d`
 
-`Spline - 3D Design Tutorial`
+`Spline - 3D Design Notes`
 
 <p align="center">
- <img width="550px" src="https://images.ctfassets.net/ooa29xqb8tix/3o9JjDLNNqNyctDjtHUg2T/50b3c6a6abb2c3a1a1969803d87349ed/Create_3D_site_with_Spline_and_React_image_1.jpg" align="center" alt="GitHub Readme Stats" />
+ <img width="650px" src="https://images.ctfassets.net/ooa29xqb8tix/3o9JjDLNNqNyctDjtHUg2T/50b3c6a6abb2c3a1a1969803d87349ed/Create_3D_site_with_Spline_and_React_image_1.jpg" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">Spline 3d Design For Web</h2>
 </p>
 
@@ -16,9 +17,14 @@ Login to [Spline](https://app.spline.design/signin)
 ## Quick Links
 
 - [Spline](#spline)
+- [Panels](#panels)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Spline Object Parameters](#spline-object-parameters)
-- [Spline Animation Parameters](#spline-animation-parameters)
+- [Vector Shapes](#vector-shapes)
+- [Material](#material)
+- [Lights](#lights)
+- [Animation](#animation)
+- [Reset](#reset)
 - [Export File Format](#export-file-format)
 
 
@@ -31,34 +37,52 @@ Designing in 3D has never been easier. Create 3D scenes, edit materials, and mod
 
 ---
 
+## Panels
+
+### `Tool Bar`
+It contains different objects and shapes, selection tool, edit frame, zoom and export features.
+
+### `Left Panel`
+In left panel, there is object Hierarchy (parent/child) and you can Group objects.
+
+### `Right Panel`
+In right panel, there is global settings. 
+
+>> `Toggle UI` hides all panel bars
+
+---
+
 ## Keyboard Shortcuts
 
 There are few keyboard shortcuts of Spline. They are:
 
-
-| Command            | Keys                                  |   |  |
-|:-------------------|:--------------------------------------|---|--|
-| Orbit              | `Option` + `Mouse Click`              |   |  |
-| Sizing             | `Shift` + `Drag`                      |   |  |
-| Sizing Ratio       | `Shift` + `Option` + `Drag`           |   |  |
-| Pan                | `Space` + `Drag`                      |   |  |
-| Zoom               | `Mouse Scroll`                        |   |  |
-| Zoom +/-           | `Cmd` + `+/-`                         |   |  |
-| Copy               | `Cmd` + `D`                           |   |  |
-| Select Multiple    | `Shift` + `Mouse Click`               | * |  |
-| Rectangle          | `R`                                   | * |  |
-| Ellipse            | `O`                                   | * |  |
-| Triangle           | `K`                                   | * |  |
-| Pentagon           | `J`                                   | * |  |
-| Reset Camera       | `Mouse Right Click` > `View`          | * |  |
-| Copy Material      | `Mouse Right Click` > `Copy Material` | * |  |
+| Command            | Keys                                  |
+|:-------------------|:--------------------------------------|
+| Orbit              | `Option` + `Drag`                     |
+| Panning            | `Space` + `Drag`                      |
+| Zoom               | `Mouse Scroll`                        |
+| Zoom +/-           | `Cmd` + `+/-`                         |
+| Sizing             | `Shift` + `Drag`                      |
+| Sizing Ratio       | `Shift` + `Option` + `Drag`           |
+| Duplicate          | `Cmd` + `D`                           |
+| Drag Copy          | `Cmd` + `Drag`                        |
+| Select Multiple    | `Shift` + `Mouse Click`               |
+| Focus Object       | `S`                                   |
+| Perspective        | `M`                                   |
+| Rectangle          | `R`                                   |
+| Ellipse            | `O`                                   |
+| Triangle           | `K`                                   |
+| Pentagon           | `J`                                   |
+| Reset Camera       | `Option` + `R`                        |
+| Reset Camera       | `Mouse Right Click` > `View`          |
+| Copy Material      | `Mouse Right Click` > `Copy Material` |
 
 
 ---
 
 ## Spline Object Parameters
 
-Here are few object parameters to speed up the Spline workforce.
+Here are few object parameters to speed up the Spline workforce. Renaming objects makes things a lot easier.
 
 `Rectangle` Parameters
 
@@ -125,10 +149,77 @@ Sphere (Blob)
          └── Far:    650
 ```
 
+`Cylinder` Parameters
+
+```
+Cylinder (Pipe)
+└── Shape
+    ├── Hollow:     50
+    └── Corner:     20
+```
+
+`Shape` Parameters
+
+```
+Shape (drawing 2d)
+└── Shape
+    ├── Extrusion:     50
+    └── Bevel:     20
+```
 
 ---
 
-## Spline Animation Parameters
+## Vector Shapes 
+
+Drawing Vector Shapes in Spline is similar to Photoshop. There is Pen tool to draw shapes. 
+
+- Put points to make any shape 
+- Hold a single point to make curve
+- After making a shape, select and press `Cmd` + hold to bring a point handle to bend it like a curve
+
+
+---
+
+## Material
+
+1. Material in Spline is layer based like Photoshop. 
+2. Materials have several options to use:
+    * Image
+    * Color
+    * Depth
+    * Normal
+    * Gradient
+    * Noise
+    * Fresnel
+    * Rainbow
+    * Toon
+    * Outline
+    * Glass
+    * Matcap
+    * Displace
+3. But Lighting & Color come by default.
+4. To use a common material for several objects just `create material assets`.
+
+
+---
+
+## Lights
+
+There are 4 different lights in Spline. They are:
+
+1. Environment Light (default)
+    * Ambient
+    * Color
+    * Intensity
+    * Shadows
+2. Point Light
+3. Directional Light
+4. Spot Light
+
+
+---
+
+## Animation
 
 Here are few animation parameters to speed up the Spline workforce.
 
@@ -160,6 +251,16 @@ State
     ├── State:      State 2
     └── Transition: Spring
 ```
+
+
+---
+
+## Reset
+
+To set all parameters 0:
+Object >> right click >> Reset Scale
+Object >> right click >> Reset Position
+Object >> right click >> Reset Rotation
 
 ---
 
