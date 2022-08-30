@@ -1,11 +1,11 @@
 
 
-# `Spline 3d`
+# `Spline Design`
 
 `Spline - 3D Design Notes`
 
 <p align="center">
- <img width="650px" src="https://images.ctfassets.net/ooa29xqb8tix/3o9JjDLNNqNyctDjtHUg2T/50b3c6a6abb2c3a1a1969803d87349ed/Create_3D_site_with_Spline_and_React_image_1.jpg" align="center" alt="GitHub Readme Stats" />
+ <img width="750px" src="https://images.ctfassets.net/ooa29xqb8tix/3o9JjDLNNqNyctDjtHUg2T/50b3c6a6abb2c3a1a1969803d87349ed/Create_3D_site_with_Spline_and_React_image_1.jpg" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">Spline 3d Design For Web</h2>
 </p>
 
@@ -48,7 +48,6 @@ In left panel, there is object Hierarchy (parent/child) and you can Group object
 ### `Right Panel`
 In right panel, there is global settings. 
 
->> `Toggle UI` hides all panel bars
 
 ---
 
@@ -73,6 +72,7 @@ There are few keyboard shortcuts of Spline. They are:
 | Ellipse            | `O`                                   |
 | Triangle           | `K`                                   |
 | Pentagon           | `J`                                   |
+| Hides Panels       | `Cmd` + `\`                           |
 | Reset Camera       | `Option` + `R`                        |
 | Reset Camera       | `Mouse Right Click` > `View`          |
 | Copy Material      | `Mouse Right Click` > `Copy Material` |
@@ -234,19 +234,19 @@ Events act according to a particular State which is mentioned inside `State` seg
 ```
 State
 ├── Basic State
-|   └── Z-index: 10
+|   └── Position: Z 10
 ├── State
-|   └── Z-index: 80
+|   └── Position: Z 80
 ├── Event
 |   ├── Type:     Start
 |   ├── State:    State
 |   ├── Duration: 5s
 |   └── Delay:    0.6
 ├── State 2
-|   └── Material
+|   └── Material (focus selection)
 |       ├── Color:   Opacity: 50
 |       └── Depth
-└── Event
+└── Event (2nd)
     ├── Type:       Mouse Hover
     ├── State:      State 2
     └── Transition: Spring
@@ -299,6 +299,4 @@ Object >> right click >> Reset Rotation
 Feel free to Contact me on [Twitter](https://mobile.twitter.com/jayedrashid), send an email to jayed@jayedrashid.com
 
 <img height="20" src="https://www.bollywoodmdb.com/images/uparrow.gif"> [back to top](#quick-links)<br>
-
-
 
